@@ -1,6 +1,7 @@
 <!doctype html>
-    <html lang="ko">  <!--웹페이지 언어 한국어 설정-->
-    <head>
+    <html lang="ko">  <!--웹페이지 언어 한국어 설정-->    
+
+<head>
          <title>WHERE ARE YOU TEACHER?- HTML</title>
       <meta charset="utf-8">
       <link rel="stylesheet" href="style.css">
@@ -19,6 +20,12 @@ body {
     background: rgb(0,0,0);
     background-size: cover;
 }
+ body::before {
+    content: "";
+    position: absolute; z-index: 1;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba(0,0,0,.7)
+}   
 
 .login-form {position: relative; z-index: 2; }/*포지션 속성 설정, 우선순위 결정*/
 .login-form h1 {
