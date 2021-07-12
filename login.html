@@ -1,8 +1,15 @@
 <!doctype html>
     <html lang="ko">  <!--웹페이지 언어 한국어 설정-->
     <head>
+         <title>WHERE ARE YOU TEACHER?- HTML</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="style.css">
+      <script src="jquery-3.4.1.js"></script><!--스크립트 삽입-->
+      
 <style>
+ @import url('https://fonts.googleapais.com/css?family=Noto+Sans+KR&display=swap');   
 *{margin: 0; padding: 0; box-sizing: border-box;} /*바깥 여백, 안쪽 여백, 박스 모델 설정*/
+   
 body {
     font-family: 'Noto Sans KR', sans-serif; /*글꼴 이름*/
     display: flex;  /*가로로 배열*/
@@ -56,17 +63,14 @@ margin-top: 20px;}
     
     } /*btn-area button 속성*/
 </style>
-      <title>WHERE ARE YOU TEACHER?- HTML</title>
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="style.css">
-      <script src="jquery-3.4.1.js"></script><!--스크립트 삽입-->
-      
+     
   </head>
-  <body>
+ 
 
     <section class="login-form"> <!--섹션 정의-->
     
         <h1>LOGIN</h1>
+        <body>
         <form action="http://192.168.0.13/index.html">
         <div class="int-area">
             <input type="text" name="id1" id="id1" autocomplete="off" required>
@@ -84,8 +88,9 @@ margin-top: 20px;}
 
                     </div> <!--학년, 반, PASSWORD 입력창, LOGIN 버튼-->
                
-            </section>
-
-           
+         
+            </form>  
         </body>
+
+        </section>
 </html>
