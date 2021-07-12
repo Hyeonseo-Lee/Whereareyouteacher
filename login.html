@@ -42,7 +42,7 @@ margin-top: 20px;}
 .int-area input:valid + label {
     top: -2px;
     font-size: 13px; color: rgb(255,77,46);
-} /*input에 값을 입력해도 label이 위로 올라간 상태 유지*/
+} /*input에 값을 입력했을 때 label 값이 위로 올라감*/
 
 .btn-area {margin-top: 30px;}
 .btn-area button {
@@ -67,8 +67,10 @@ margin-top: 20px;}
     <section class="login-form"> <!--섹션 정의-->
     
         <h1>LOGIN</h1>
+        <form action="http://192.168.111.106/index.html">
         <div class="int-area">
-            <input type="text" name="id1" id="id1" autocomplete="off" required>
+            <input type="text" name="id1" id="id1" >
+            
             <label for="id">학년</label> </div>
             <div class="int-area">
                 <input type="text" name="id2" id="id2" autocomplete="off" required>
@@ -78,7 +80,7 @@ margin-top: 20px;}
                     <label for="pw">PASSWORD</label> </div>
                     <div class="btn-area">
                         <button id="btn" 
-                        type="submit">LOGIN</button>
+                        type="submit">LOGIN</button> 
 
                     </div> <!--학년, 반, PASSWORD 입력창, LOGIN 버튼-->
                
