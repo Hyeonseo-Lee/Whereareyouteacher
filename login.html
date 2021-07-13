@@ -2,7 +2,22 @@
     <html lang="ko">  <!--웹페이지 언어 한국어 설정-->    
 
 <head>
-    <script src="jquery-3.4.1.js"></script>
+    <script> function userlogin() {
+    var id1 = "3";
+    var id2 = "5";
+    var pw = "0000";
+    var id1_box = userid.value;
+    var id2_box = userid.value;
+    var password_box = userpassword.value;
+    if(id1== id1_box && id2 == id2_box && pw == password_box) {form action="http://192.168.0.13/index.html";}else{
+        form action="http://192.168.0.13/error.html";
+    }
+            
+        }
+    </script>
+    
+    
+  
 <title>WHERE ARE YOU TEACHER?- HTML</title>
 <meta charset="utf-8">
 
@@ -85,9 +100,7 @@ margin-top: 20px;}
 		<button id="btn" type="submit">LOGIN</button> </div> <!--학년, 반, PASSWORD 입력창, LOGIN 버튼-->
 	</form>
     
-    <script> $(document).ready(function() {
-$('.site-title a').attr('href','http://192.168.0.13/load.html');
-});</script>
+    
     
 </body>
  </section>
