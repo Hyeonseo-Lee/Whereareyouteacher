@@ -36,10 +36,10 @@
 
 	}
 	.navigation ul {
-		list-style-type: none; /*불릿 모양과 번호 스타일 지정*/
+		list-style-type: none; /*기본값 안 씀*/
 		margin: 0;
 		padding: 0;
-		overflow: hidden;
+		overflow: hidden; /*넘치는 콘텐츠 안 보이게*/
 		font-weight: 500;
 		vertical-align: middle;
 	}
@@ -104,17 +104,17 @@
       <tr>
         <td>1</td> <!--셀 설정-->
         <td>oo선생님 / 정보</td>
-        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pinD0' value='60'><input type="submit" value="Help"> </form></td> <!--서버 전송-->
+        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pin' value='0'><input type="submit" value="Help"> </form></td> <!--서버 전송-->
       </tr>
       <tr>
         <td>2</td>
         <td>oo선생님 / 수학</td>
-        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pinD0' value='60'><input type="submit" value="Help"> </form></td>
+        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pin' value='0'><input type="submit" value="Help"> </form></td>
       </tr>
       <tr>
         <td>3</td>
         <td>oo선생님 / 물리</td>
-        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pinD0' value='60'><input type="submit" value="Help"> </form></td>
+        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pin' value='0'><input type="submit" value="Help"> </form></td>
       </tr>
         </table>
       </div>

@@ -36,7 +36,7 @@
 
 	}
 	.navigation ul {
-		list-style-type: none; /*불릿 모양과 번호 스타일 지정*/
+		list-style-type: none; /*기본값 없앰*/
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
@@ -51,8 +51,8 @@
 		display: inline-block;
 		color: black;
 		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
+		padding: 14px 16px; /*상하/좌우 여백 설정*/ 
+		text-decoration: none; /*기본값 없앰*/
 	} /*드롭다운 메뉴 설정*/
 
 	.main{
@@ -67,7 +67,7 @@
     <link rel="stylesheet" type="text/css" href="all.css">
     <style type="text/css">
     table{
-      border-collapse: collapse;
+      border-collapse: collapse;/*표 테두리 겹치게 */
       width: 100%;
       text-align: center;
     }
@@ -111,17 +111,17 @@
       <tr>
         <td>1</td>
         <td>oo선생님 / 정보</td>
-        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pinD2' value='60'><input type="submit" value="Help"> </form></td>
+        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pin' value='2'><input type="submit" value="Help"> </form></td>
       </tr>
       <tr>
         <td>2</td>
         <td>oo선생님 / 수학</td>
-        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pinD2' value='60'><input type="submit" value="Help"> </form></td>
+        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pin' value='2'><input type="submit" value="Help"> </form></td>
       </tr>
       <tr>
         <td>3</td>
         <td>oo선생님 / 물리</td>
-        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pinD2' value='60'><input type="submit" value="Help"> </form></td>
+        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pin' value='2'><input type="submit" value="Help"> </form></td>
       </tr>
     </table>
 
