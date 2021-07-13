@@ -1,31 +1,21 @@
 <!doctype html>
     <html lang="ko">  <!--웹페이지 언어 한국어 설정-->    
 
-<head>
-<title>WHERE ARE YOU TEACHER?- HTML</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
-<script src="jquery-3.4.1.js"></script><!--스크립트 삽입-->
 <style>
 @import url('https://fonts.googleapais.com/css?family=Noto+Sans+KR&display=swap');
 *{margin: 0; padding: 0; box-sizing: border-box;}/*바깥 여백, 안쪽 여백, 박스 모델 설정*/
 body {
     font-family: 'Noto Sans KR', sans-serif;/*글꼴 이름*/
-    display: flex;/*가로로 배열*/
+    display: flex; /*가로로 배열*/
     justify-content: center; /*정렬된 요소 가로에서 배치*/
     align-items: center; /*아이템 전체 위치 결정*/
     height: 100vh;
     background: rgb(0,0,0);
-    background-size: cover;
 }
-body::before {
-    content: "";
-    position: absolute; z-index: 1;
-    top: 0; right: 0; bottom: 0; left: 0;
-    background-color: rgba(0,0,0,.7)
-}
-
-.login-form {position: relative; z-index: 2; } /*포지션 속성 설정, 우선순위 결정*/
+   
+.login-form {
+    position: relative;
+    z-index: 2; } /*포지션 속성 설정, 우선순위 결정*/
 .login-form h1 {
     font-size: 32px; color: #fff;
     text-align: center;
@@ -46,9 +36,10 @@ margin-top: 20px;}
 .int-area label {
     position: absolute; left: 10px; top: 15px;
     font-size: 18px; color: #999;
-    transition: all, 5s ease;
+    transition: all, 5s ease; /*transition으로 motion을 나타낼 건데 property를 all로 설정, 5초 동안 천천히 바뀌게 설정*/
 } /* input 제목 label 속성 설정*/
 
+    
 .int-area input:focus + label,
 .int-area input:valid + label {
     top: -2px;
@@ -62,13 +53,16 @@ margin-top: 20px;}
     color: #fff;
     font-size: 20px;
     border: none;
-    border-radius: 25px;
+    border-radius: 25px; /*모든 모서리가 25px 크기의 둥근 모양을 가짐*/
     cursor: pointer;
 }  /*btn-area button 속성*/
+    button{
+        margin-top: 10px;
+    }
 </style>
 </head>
 <section class="login-form"> <!--섹션 정의-->
-	<h1>LOGIN</h1>
+	<h1>SIGN IN</h1>
 
 <body>
 	<form action="http://192.168.0.13/index.html">
