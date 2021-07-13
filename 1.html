@@ -16,30 +16,30 @@
 	}
 	
 	.t-c{
-		text-align: center;  /*텍스트 정렬 중심으로*/ 
+		text-align: center;   
 	}
 	.sub{
 		font-size: 25px;
 		font-weight: 500;	
 		margin: 0px auto;
 		color: rgb(69, 75, 106);
-	} /*글꼴 크기, 굵기, 여백, 색깔 설정*/
+	} /*sub 태그 글꼴 크기, 굵기, 여백, 색깔 설정*/
 	.navigation{
 		position: fixed; /*브라우저(화면)를 위치기준으로 사용*/
 		height: 60px; /*높이 설정*/
 		background: white;
 		box-shadow: rgb(126 133 142 / 5%) 0px 4px 10px 0px; /*그림자 효과*/
 		width: 100%;
-		margin: 0 auto; /*가운데에 정렬*/
+		margin: 0 auto; /*좌우여백 자동*/
 		left: 0;
 		right: 0;
 
 	}
 	.navigation ul {
-		list-style-type: none; /*기본값 안 씀*/
+		list-style-type: none; /*기본값 없앰*/
 		margin: 0;
 		padding: 0;
-		overflow: hidden; /*넘치는 콘텐츠 안 보이게*/
+		overflow: hidden;
 		font-weight: 500;
 		vertical-align: middle;
 	}
@@ -47,37 +47,20 @@
 		float: left;
 	}
 	
+	.navigation li a, .dropbtn {
+		display: inline-block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px; /*상하/좌우 여백 설정*/ 
+		text-decoration: none; /*기본값 없앰*/
+	} /*드롭다운 메뉴 설정*/
 
 	.main{
 		width: 1200px;  
 		height: 500px;
-		/*padding-top: 80px;*/ 
+		padding-top: 80px; 
 		margin: 0 auto;
           } </style>
-  <head>
-    <title>WHERE ARE YOU TEACHER?- HTML</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="all.css"> <!--all.css 파일 불러옴-->
-    <style type="text/css"> 
-    table{
-      border-collapse: collapse; /*이웃하는 테두리선 겹쳐서 표시*/
-      width: 100%;    /*표 너비 설정*/
-      text-align: center; /*중앙 정렬*/
-    } /*표 설정*/
-    table th{
-     background-color: rgb(23, 31, 70); /*표 제목 배경 색깔 설정*/
-     color: white; /*표 제목 색깔 설정*/
-   }
-   table td, table th{
-    border: 1px solid #ddd;  /*테두리 두께, 선 종류, 선 색깔 설정*/
-    padding: 8px; /*안쪽 여백 설정*/
-  }
-  table tr:nth-child(even){background-color: #f2f2f2;} /*짝수번째 배경 색깔*/
-
-  table tr:hover {background-color: #ddd;} /*마우스 커서 올려둔 상태*/
-  
-   
-</style>
 </head>
 <body>
   <nav class="navigation" style="width: 1200px; margin: 0px auto;"><!--다른 곳(초기 화면)으로의 링크 유도(네비게이션 설정)-->
