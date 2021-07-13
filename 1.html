@@ -16,21 +16,21 @@
 	}
 	
 	.t-c{
-		text-align: center;   
+		text-align: center;  /*텍스트 정렬 중심으로*/ 
 	}
 	.sub{
 		font-size: 25px;
 		font-weight: 500;	
 		margin: 0px auto;
 		color: rgb(69, 75, 106);
-	} /*sub 태그 글꼴 크기, 굵기, 여백, 색깔 설정*/
+	} /*글꼴 크기, 굵기, 여백, 색깔 설정*/
 	.navigation{
 		position: fixed; /*브라우저(화면)를 위치기준으로 사용*/
 		height: 60px; /*높이 설정*/
 		background: white;
 		box-shadow: rgb(126 133 142 / 5%) 0px 4px 10px 0px; /*그림자 효과*/
 		width: 100%;
-		margin: 0 auto; /*좌우여백 자동*/
+		margin: 0 auto; /*가운데에 정렬*/
 		left: 0;
 		right: 0;
 
@@ -47,18 +47,11 @@
 		float: left;
 	}
 	
-	.navigation li a, .dropbtn {
-		display: inline-block;
-		color: black;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-	} /*드롭다운 메뉴 설정*/
 
 	.main{
 		width: 1200px;  
 		height: 500px;
-		padding-top: 80px; 
+		/*padding-top: 80px;*/ 
 		margin: 0 auto;
           } </style>
   <head>
@@ -111,24 +104,21 @@
       <tr>
         <td>1</td> <!--셀 설정-->
         <td>oo선생님 / 정보</td>
-        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pinD2' value='60'><input type="submit" value="Help"> </form></td> <!--서버 전송-->
+        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pinD0' value='60'><input type="submit" value="Help"> </form></td> <!--서버 전송-->
       </tr>
       <tr>
         <td>2</td>
         <td>oo선생님 / 수학</td>
-        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pinD2' value='60'><input type="submit" value="Help"> </form></td>
+        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pinD0' value='60'><input type="submit" value="Help"> </form></td>
       </tr>
       <tr>
         <td>3</td>
         <td>oo선생님 / 물리</td>
-        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pinD2' value='60'><input type="submit" value="Help"> </form></td>
+        <td><form action="http://192.168.0.13/load.html"><input type='hidden' name='pinD0' value='60'><input type="submit" value="Help"> </form></td>
       </tr>
-    </table>
-
-  </div>
-
-</content>
-
+        </table>
+      </div>
+    </content>
 
 </body>
 </html>
