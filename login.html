@@ -70,32 +70,27 @@
             }
         </style>
     </head>
-
-
-
     <body>
-     <section class="login-form"> <!--섹션 정의-->
-       <h1>SIGN IN</h1>
-       <form name="form">
-        <div class="int-area">
-          <input type="text" name="id1" id="id1" autocomplete="off" required>
-          <label for="id">학년</label>
-      </div>
-      <div class="int-area">
-          <input type="text" name="id2" id="id2" autocomplete="off" required>
-          <label for="id">반</label>
-      </div>
-      <div class="int-area">
-          <input type="password" name="pw" id="pw" autocomplete="off" required>
-          <label for="pw">PASSWORD</label> 
-      </div>
-      <div class="btn-area">
-        <button id="btn" onclick="userlogin()">LOGIN</button>
-    </div> <!--학년, 반, PASSWORD 입력창, LOGIN 버튼-->
-</form>
+       <section class="login-form"> <!--섹션 정의-->
+         <h1>SIGN IN</h1>
+         
+            <div class="int-area">
+              <input type="text" name="id1" id="id1" autocomplete="off" required>
+              <label for="id">학년</label>
+          </div>
+          <div class="int-area">
+              <input type="text" name="id2" id="id2" autocomplete="off" required>
+              <label for="id">반</label>
+          </div>
+          <div class="int-area">
+              <input type="password" name="pw" id="pw" autocomplete="off" required>
+              <label for="pw">PASSWORD</label> 
+          </div>
+          <div class="btn-area">
+            <button id="btn" onclick="userlogin()">LOGIN</button>
+        </div> <!--학년, 반, PASSWORD 입력창, LOGIN 버튼-->
+    
 </section>
-
-
 <script> 
     document.getElementById("btn").onclick = function() {userlogin()};
     function userlogin() {
@@ -108,12 +103,10 @@
         var password_box = document.getElementById('pw').value;
 
         if(id == id1 && cl==id2 && password == password_box) {
-            
-            theForm.action="http://192.168.0.13/index.html"
+            window.location.href="http://192.168.0.13/index.html"
         }
         else{
-            
-            theForm.action="http://192.168.0.13/error.html"
+             window.location.href="http://192.168.0.13/error.html"
         }
     }
 
