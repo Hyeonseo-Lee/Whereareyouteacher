@@ -1,28 +1,14 @@
 <!doctype html>
     <html lang="ko">  <!--웹페이지 언어 한국어 설정-->    
 
-<head>
-    <script> function userlogin() {
-    var id1 = "3";
-    var id2 = "5";
-    var pw = "0000";
-    var id1_box = userid.value;
-    var id2_box = userid.value;
-    var password_box = userpassword.value;
-    if(id1== id1_box && id2 == id2_box && pw == password_box) {form action="http://192.168.0.13/index.html";}else{
-        form action="http://192.168.0.13/error.html";
-    }
-            
-        }
-    </script>
-    
+
     
   
 <title>WHERE ARE YOU TEACHER?- HTML</title>
 <meta charset="utf-8">
 
 <style>
-@import url('https://fonts.googleapais.com/css?family=Noto+Sans+KR&display=swap');
+
 *{margin: 0; padding: 0; box-sizing: border-box;}/*바깥 여백, 안쪽 여백, 박스 모델 설정*/
 body {
     font-family: 'Noto Sans KR', sans-serif;/*글꼴 이름*/
@@ -80,12 +66,27 @@ margin-top: 20px;}
         margin-top: 10px;
     }
 </style>
-</head>
+<head>
+   
+
+        
+
+        </head>
 <section class="login-form"> <!--섹션 정의-->
 	<h1>SIGN IN</h1>
 
 <body>
-	<form action="http://192.168.0.13/index.html"> <!-서버 전송-->
+	 <script> function userlogin() {
+    var id1 = "3";
+    var id2 = "5";
+    var pw = "0000";
+     var id1_box = document.getElementById(id1) ;
+    var id2_box = document.getElementById(id2);
+    var password_box = document.getElementById(pw);
+if(id1== id1_box && id2 == id2_box && pw == password_box) {form action="http://192.168.0.13/index.html";}else{
+        form action="http://192.168.0.13/error.html";
+
+    </script>
 	
 	<div class="int-area">
 		<input type="text" name="id1" id="id1" autocomplete="off" required>
@@ -98,8 +99,6 @@ margin-top: 20px;}
 		<label for="pw">PASSWORD</label> </div>
 	<div class="btn-area">
 		<button id="btn" type="로그인" onclick="userlogin()">LOGIN</button> </div> <!--학년, 반, PASSWORD 입력창, LOGIN 버튼-->
-	</form>
-    
     
     
 </body>
